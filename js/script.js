@@ -140,11 +140,17 @@ window.addEventListener('load', () => {
 let current = 0
 let score = 0
 
-function loadQuiz(){
+function loadQuiz() {
   deselectedRadio()
   const data = JSON.parse(localStorage.getItem('questions'))
   const currentQuizData = data[current]
-  const { a, b, c, d, question} = currentQuizData
+  const {
+    a,
+    b,
+    c,
+    d,
+    question
+  } = currentQuizData
   $question.innerHTML = question
   $a_answer.innerHTML = a
   $b_answer.innerHTML = b
@@ -154,17 +160,17 @@ function loadQuiz(){
 
 loadQuiz()
 
-function selectedAnswer(){
+function selectedAnswer() {
   let answer = null
   $answerRadio.forEach(item => {
-    if(item.checked){
+    if (item.checked) {
       answer = item.id
     }
   })
   return answer
 }
 
-function deselectedRadio(){
+function deselectedRadio() {
   $answerRadio.forEach(item => item.checked = false)
 }
 
@@ -173,29 +179,29 @@ let myAnswer = []
 $submitBtn.addEventListener('click', e => {
   e.preventDefault()
   let answer = selectedAnswer()
-  if(answer){
+  if (answer) {
     $error.classList.remove('active')
     const data = JSON.parse(localStorage.getItem('questions'))
-    if(answer === data[current].correct){
+    if (answer === data[current].correct) {
       score++
     }
     myAnswer.push(answer)
     current++
-    if (current < data.length){
+    if (current < data.length) {
       loadQuiz()
-    }else{
+    } else {
       $card.innerHTML = `
         <h2>Вы ответили правильно на ${score}/${data.length} вопросов</h2>
         <button onclick="trueAnswer()">показать правильные ответы</button>
       `
       $submitBtn.style.display = 'none'
     }
-  }else{
+  } else {
     $error.classList.add('active')
   }
 })
 
-function trueAnswer(){
+function trueAnswer() {
   const data = JSON.parse(localStorage.getItem('questions'))
   const template = data.map((item, index) => {
     return card(item, index)
@@ -208,7 +214,7 @@ function trueAnswer(){
   `)
 }
 
-function card(item, index){
+function card(item, index) {
   return `
       <div class="card_true">
         <ol type="a" class="answerList">
@@ -226,7 +232,7 @@ function card(item, index){
     `
 }
 
-$logout.addEventListener('click' , () => {
+$logout.addEventListener('click', () => {
   localStorage.setItem('auth', false)
   location.reload()
 })
