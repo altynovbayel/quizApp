@@ -24,14 +24,16 @@
 .nav_list{
   display: flex;
 }
-.nav_list li{
+.nav_list button{
   margin: 0 15px;
   padding: 5px 7px;
   cursor: pointer;
   border-radius: 10px;
   transition: .5s;
+  background-color: transparent;
+  color: white;
 }
-.nav_list li:hover{
+.nav_list button:hover{
   background-color: #6A5784;
 }
 .container{

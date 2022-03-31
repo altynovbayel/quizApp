@@ -231,12 +231,6 @@ $logout.addEventListener('click' , () => {
   location.reload()
 })
 
-$addQuestions.addEventListener('click', e => {
-  e.preventDefault()
-
-
-})
-
 function closeModal() {
   $modalContainer.classList.remove('show')
 }
