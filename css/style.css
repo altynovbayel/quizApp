@@ -56,14 +56,16 @@
   margin-top: 200px;
   position: relative;
 }
-.card_true{
+
+.card_true {
   display: flex;
   justify-content: space-around;
   border: 1px solid black;
   padding: 5px;
   margin: 30px 0;
 }
-.card_title{
+
+.card_title {
   width: 50%;
 }
 
@@ -92,14 +94,14 @@
 .errorText {
   position: absolute;
   top: -50px;
-  left: 0;
+  left: -50px;
   color: red;
   transition: .5s;
   opacity: 0;
 }
 
 .errorText.active {
-  left: 50px;
+  left: 10px;
   opacity: 1;
 }
 
@@ -239,7 +241,8 @@
   }
   .card {
     display: block;
-   
+    margin: 50px auto 0;
+    width: 300px;
   }
 
   .card_title {
@@ -250,8 +253,9 @@
   .navbar h1 {
     display: none;
   }
-  .card_true{
-     margin: 30px auto 0;
+
+  .card_true {
+    margin: 30px auto 0;
     width: 300px;
   }
 }
