@@ -43,51 +43,51 @@ const quizData = [{
     d: 'the sweetest ',
     correct: 'c'
   },
-  // {
-  //   id: 6,
-  //   question: 'I like him … I don’t want to go to the cinema with him.',
-  //   a: 'and ',
-  //   b: 'but',
-  //   c: 'so',
-  //   d: 'as ',
-  //   correct: 'b'
-  // },
-  // {
-  //   id: 7,
-  //   question: 'Tom often … to his office by car.',
-  //   a: 'goes',
-  //   b: 'go',
-  //   c: 'is going',
-  //   d: 'had done  ',
-  //   correct: 'a'
-  // },
-  // {
-  //   id: 8,
-  //   question: 'Don’t worry. We … your dog. Look here!',
-  //   a: 'found ',
-  //   b: 'have found ',
-  //   c: 'had found',
-  //   d: 'were finding',
-  //   correct: 'b'
-  // },
-  // {
-  //   id: 9,
-  //   question: 'I promise, I … back next Saturday.',
-  //   a: 'will come ',
-  //   b: 'had come ',
-  //   c: 'am coming ',
-  //   d: 'have been coming  ',
-  //   correct: 'a'
-  // },
-  // {
-  //   id: 10,
-  //   question: 'What’s going on? – We … for the concert. Join us!',
-  //   a: 'practice',
-  //   b: 'have been practicing',
-  //   c: 'are practicing',
-  //   d: 'had practiced',
-  //   correct: 'c'
-  // },
+  {
+    id: 6,
+    question: 'I like him … I don’t want to go to the cinema with him.',
+    a: 'and ',
+    b: 'but',
+    c: 'so',
+    d: 'as ',
+    correct: 'b'
+  },
+  {
+    id: 7,
+    question: 'Tom often … to his office by car.',
+    a: 'goes',
+    b: 'go',
+    c: 'is going',
+    d: 'had done  ',
+    correct: 'a'
+  },
+  {
+    id: 8,
+    question: 'Don’t worry. We … your dog. Look here!',
+    a: 'found ',
+    b: 'have found ',
+    c: 'had found',
+    d: 'were finding',
+    correct: 'b'
+  },
+  {
+    id: 9,
+    question: 'I promise, I … back next Saturday.',
+    a: 'will come ',
+    b: 'had come ',
+    c: 'am coming ',
+    d: 'have been coming  ',
+    correct: 'a'
+  },
+  {
+    id: 10,
+    question: 'What’s going on? – We … for the concert. Join us!',
+    a: 'practice',
+    b: 'have been practicing',
+    c: 'are practicing',
+    d: 'had practiced',
+    correct: 'c'
+  },
 ]
 const $container = document.querySelector('.container')
 const $card = document.querySelector('.card')

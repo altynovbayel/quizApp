@@ -7,7 +7,10 @@
   outline: none;
   list-style: none;
 }
-
+body{
+  background: url('../img/img3.akspic.ru-vektornaya_grafika-grafika-vektor-svet-dizajn-3000x2000.jpg') center / cover no-repeat;
+  height: 100vh;
+}
 .header_back {
   background-color: rgba(0, 0, 0, .7);
   color: white;
@@ -54,6 +57,8 @@
   border: 1px solid black;
   margin-top: 200px;
   position: relative;
+  background-color: #838996;
+
 }
 
 .card_true {
