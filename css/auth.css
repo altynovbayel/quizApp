@@ -51,3 +51,9 @@
 .pass.active{
   border: 1px solid red;
 }
+.key{
+  display: none;
+}
+.key.active{
+  display: block;
+}
