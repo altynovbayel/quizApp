@@ -10,6 +10,7 @@
 body{
   background: url('../img/img3.akspic.ru-vektornaya_grafika-grafika-vektor-svet-dizajn-3000x2000.jpg') center / cover no-repeat;
   height: 100vh;
+  background-attachment: fixed;
 }
 .header_back {
   background-color: rgba(0, 0, 0, .7);
@@ -58,7 +59,6 @@ body{
   margin-top: 200px;
   position: relative;
   background-color: #838996;
-
 }
 
 .card_true {
@@ -67,6 +67,8 @@ body{
   border: 1px solid black;
   padding: 5px;
   margin: 30px 0;
+  background-color: #838996;
+
 }
 
 .card_title {
@@ -143,7 +145,19 @@ body{
   transition: .3s;
 }
 
+.current{
+  margin-left: 100px;
+}
+
 /* modal window */
+
+.modalError{
+  color: red;
+  transition: .5s;
+}
+.modalError.active{
+  display: block;
+}
 
 .modal_container {
   width: 100%;

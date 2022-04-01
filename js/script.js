@@ -103,7 +103,7 @@ const $logout = document.querySelector('.logout')
 const $btn = document.querySelector('.add')
 const $modalContainer = document.querySelector('.modal_container')
 const $close = document.querySelector('.close')
-
+const $current = document.querySelector('.current')
 
 const $add_questions = document.querySelector('.add_questions')
 const $add_a = document.querySelector('.add_a')
@@ -112,6 +112,7 @@ const $add_c = document.querySelector('.add_c')
 const $add_d = document.querySelector('.add_d')
 const $add_correct = document.querySelector('.add_correct')
 const $add = document.querySelector('.accept')
+const $modalError = document.querySelector('.modalError')
 
 window.addEventListener('load', () => {
   let auth = localStorage.getItem('auth')
@@ -156,6 +157,8 @@ function loadQuiz() {
   $b_answer.innerHTML = b
   $c_answer.innerHTML = c
   $d_answer.innerHTML = d
+  $current.innerHTML = `${current + 1}/${data.length}`
+
 }
 
 loadQuiz()
@@ -269,16 +272,21 @@ window.addEventListener('keyup', e => {
 
 $add.addEventListener('click', e => {
   const data = JSON.parse(localStorage.getItem('questions'))
-  const addNewQuestions = {
-    id: 0,
-    question: $add_questions.value,
-    a: $add_a.value,
-    b: $add_b.value,
-    c: $add_c.value,
-    d: $add_d.value,
-    correct: $add_correct.value
+  if ($add_questions.value.length > 1){
+    const addNewQuestions = {
+      id: 0,
+      question: $add_questions.value,
+      a: $add_a.value,
+      b: $add_b.value,
+      c: $add_c.value,
+      d: $add_d.value,
+      correct: $add_correct.value
+    }
+    data.push(addNewQuestions)
+    localStorage.setItem('questions', JSON.stringify(data))
+    location.reload()
+  }else{
+    $modalError.innerHTML = 'Задайте вопрос!'
   }
-  data.push(addNewQuestions)
-  localStorage.setItem('questions', JSON.stringify(data))
-  location.reload()
+  
 })
