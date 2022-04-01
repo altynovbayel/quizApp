@@ -217,17 +217,19 @@ function trueAnswer() {
 function card(item, index) {
   return `
       <div class="card_true">
-        <ol type="a" class="answerList">
-          <h3 class="">${item.question}</h3>
-          <li>${item.a}</li>
-          <li>${item.b}</li>
-          <li>${item.c}</li>
-          <li>${item.d}</li>
+        <div class="answerList">
+          <h3>${item.question}</h3>
+          <ol type="1" class="true_list">
+            <li>${item.a}</li>
+            <li>${item.b}</li>
+            <li>${item.c}</li>
+            <li>${item.d}</li>
+          </ol>
           <h5 class="">
             Правильный ответ: <span class="correct">${item.correct}</span>
           </h5>
           <h5 class="">ваш вариант ответа: <span class="myAnswer">${myAnswer[index]}</span></h5>
-        </ol>
+        </div>
       </div>
     `
 }

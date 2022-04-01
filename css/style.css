@@ -52,7 +52,6 @@
   display: flex;
   justify-content: space-around;
   border: 1px solid black;
-  padding: 5px;
   margin-top: 200px;
   position: relative;
 }
@@ -66,7 +65,9 @@
 }
 
 .card_title {
-  width: 50%;
+  width: 250px;
+  border-right: 1px solid;
+  padding: 5px;
 }
 
 .card_body div {
@@ -112,9 +113,12 @@
 .answerList {
   width: 80%;
 }
-
-.answerList li {
+.true_list{
   margin: 10px 0;
+}
+.true_list li {
+  margin: 10px 0 0 20px;
+  list-style: lower-alpha;
 }
 
 .correct {
