@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/admin.css">
+  <title>admin</title>
+</head>
+
+<body>
+  <div class="modal_container show">
+    <button class="back">back</button>
+    <div class="modalCard">
+      <div class="modalHeader">
+        <h3>добавить вопрос</h3>
+      </div>
+      <div class="modalBody">
+        <span class="modalError"></span>
+        <label for="">
+          themes:
+          <select id="themes">
+          </select>
+        </label>
+        <label for="">
+          Question
+          <input class="add_questions" type="text" placeholder="Questions">
+        </label>
+        <label for="">
+          a
+          <input class="add_a option" type="text" placeholder="answer 'a'" id="a">
+        </label>
+        <label for="">
+          b
+          <input class="add_b option" type="text" placeholder="answer 'b'" id="b">
+        </label>
+        <label for="">
+          c
+          <input class="add_c option" type="text" placeholder="answer 'c'" id="c">
+        </label>
+        <label for="">
+          d
+          <input class="add_d option" type="text" placeholder="answer 'd'" id="d">
+        </label>
+        <label for="">
+          <span class="right_ans">right answer</span>
+          <select class="correctAnswer" name="" id="right_answer">
+            <option value="a">a</option>
+            <option value="b">b</option>
+            <option value="c">c</option>
+            <option value="d">d</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="modalFooter">
+        <button class="accept actions">add</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/admin.js"></script>
+</body>
+
+</html>

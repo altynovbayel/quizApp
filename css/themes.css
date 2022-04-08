@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: url('../img/img3.akspic.ru-vektornaya_grafika-grafika-vektor-svet-dizajn-3000x2000.jpg') center / cover no-repeat;
+  background-attachment: fixed;
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+.d_flex{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 200px;
+}
+.block{
+  width: 200px;
+  height: 200px;
+  background-color: slateblue;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: .3s;
+  box-shadow: 0 0 5px blue;
+  margin: 10px;
+}
+.block:hover{
+  background-color: rgb(69, 52, 177);
+}
+.block p{
+  margin-top: 70px;
+}
+
+.adminPage{
+  position: fixed;
+  top: 1rem;
+  right: 5rem;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: rgb(134, 159, 180);
+  cursor: pointer;
+}
