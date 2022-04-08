@@ -50,3 +50,9 @@ body{
   background-color: rgb(134, 159, 180);
   cursor: pointer;
 }
+
+@media (max-width: 730px) {
+  .d_flex{
+    margin-top: 100px;
+  }
+}
